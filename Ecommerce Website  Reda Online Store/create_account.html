@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="4.css">
+  <title>إنشاء حساب جديد</title>
+</head>
+<body>
+
+  <main class="auth-card">
+    <header class="auth-header">
+      <h1>إنشاء حساب جديد</h1>
+    </header>
+
+    <form class="auth-form" action="#" method="POST">
+      <div class="form-group">
+        <label for="reg-name">الاسم الكامل</label>
+        <input id="reg-name" class="form-input" type="text" placeholder="محمد أحمد" required>
+      </div>
+
+      <div class="form-group">
+        <label for="reg-email">البريد الإلكتروني</label>
+        <input id="reg-email" class="form-input" type="email" placeholder="name@example.com" required>
+      </div>
+
+      <div class="form-group">
+        <label for="reg-pass">كلمة المرور</label>
+        <input id="reg-pass" class="form-input" type="password" placeholder="enter password" required>
+      </div>
+
+      <div class="form-group">
+        <label for="reg-confirm-pass">تأكيد كلمة المرور</label>
+        <input id="reg-confirm-pass" class="form-input" type="password" placeholder="confirm password" required>
+      </div>
+
+      <button class="btn-submit" type="submit">إنشاء حساب</button>
+    </form>
+
+    <footer class="auth-footer">
+      <span>لديك حساب بالفعل؟</span>
+      <a href="log_in.html">تسجيل الدخول</a>
+    </footer>
+  </main>
+
+</body>
+</html>
