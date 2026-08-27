@@ -1,0 +1,579 @@
+[
+  {
+    "id": 101,
+    "img": "img/product/0.png",
+    "name_ar": "شاشة LG FHD",
+    "name_en": "LG FHD Monitor",
+    "price": 145.00,
+    "catetory": "electronics",
+    "rating": 5.0,
+    "rating_count": 128,
+    "colors": ["Black", "Silver", "Dark Gray"],
+    "features": [
+      "Full HD display",
+      "Wide viewing angle",
+      "Slim modern design",
+      "Clear and vibrant colors",
+      "Suitable for home and office use"
+    ]
+  },
+  {
+    "id": 102,
+    "img": "img/product/1.png",
+    "name_ar": "TECHNO 7",
+    "name_en": "TECNO 7 Smartphone",
+    "price": 28.00,
+    "old_price": 31.00,
+    "catetory": "electronics",
+    "rating": 5.0,
+    "rating_count": 256,
+    "colors": ["Black", "Blue", "Silver"],
+    "features": [
+      "Smartphone design",
+      "Touchscreen display",
+      "Dual SIM support",
+      "Modern Android experience",
+      "Compact and lightweight design"
+    ]
+  },
+  {
+    "id": 103,
+    "img": "img/product/11.png",
+    "name_ar": "هواوي Y8",
+    "name_en": "Huawei Y8 Smartphone",
+    "price": 65.00,
+    "catetory": "electronics",
+    "rating": 4.0,
+    "rating_count": 310,
+    "colors": ["Black", "Blue", "Silver"],
+    "features": [
+      "Smartphone design",
+      "Touchscreen display",
+      "Dual SIM support",
+      "Rear camera",
+      "Modern Android experience"
+    ]
+  },
+  {
+    "id": 104,
+    "img": "img/product/10.png",
+    "name_ar": "داتا شو",
+    "name_en": "Data Show Projector",
+    "price": 39.00,
+    "catetory": "electronics",
+    "rating": 5.0,
+    "rating_count": 189,
+    "colors": ["Black", "White", "Gray"],
+    "features": [
+      "Large-screen projection",
+      "Compact design",
+      "Suitable for presentations",
+      "Suitable for home entertainment",
+      "Easy to carry"
+    ]
+  },
+  {
+    "id": 105,
+    "img": "img/product/12.png",
+    "name_ar": "طابعة حراري epson",
+    "name_en": "Epson Thermal Printer",
+    "price": 31.00,
+    "catetory": "electronics",
+    "rating": 4.0,
+    "rating_count": 95,
+    "colors": ["Black", "White"],
+    "features": [
+      "Thermal printing technology",
+      "Compact design",
+      "Fast receipt printing",
+      "Suitable for retail environments",
+      "Easy paper loading"
+    ]
+  },
+  {
+    "id": 106,
+    "img": "img/product/20.png",
+    "name_ar": "عصارة",
+    "name_en": "Juicer",
+    "price": 92.00,
+    "catetory": "electronics",
+    "rating": 5.0,
+    "rating_count": 64,
+    "colors": ["Black", "Silver", "White"],
+    "features": [
+      "Electric juicing system",
+      "Easy operation",
+      "Durable construction",
+      "Easy to clean",
+      "Suitable for home use"
+    ]
+  },
+  {
+    "id": 107,
+    "img": "img/product/2.png",
+    "name_ar": "hp elit G5",
+    "name_en": "HP Elite G5 Desktop",
+    "price": 315.00,
+    "catetory": "electronics",
+    "rating": 5.0,
+    "rating_count": 64,
+    "colors": ["Black", "Dark Gray"],
+    "features": [
+      "Business desktop computer",
+      "Compact tower design",
+      "Suitable for office work",
+      "Multiple connectivity options",
+      "Professional design"
+    ]
+  },
+  {
+    "id": 108,
+    "img": "img/product/15.png",
+    "name_ar": "سامسونج s9+",
+    "name_en": "Samsung Galaxy S9+",
+    "price": 168.00,
+    "catetory": "electronics",
+    "rating": 5.0,
+    "rating_count": 64,
+    "colors": ["Black", "Blue", "Purple"],
+    "features": [
+      "Premium smartphone design",
+      "Touchscreen display",
+      "Dual camera system",
+      "Fingerprint sensor",
+      "Expandable storage support"
+    ]
+  },
+  {
+    "id": 109,
+    "img": "img/product/17.png",
+    "name_ar": "كاميرا مراقبة SAMSUNG",
+    "name_en": "Samsung Security Camera",
+    "price": 50.00,
+    "catetory": "electronics",
+    "rating": 5.0,
+    "rating_count": 64,
+    "colors": ["White", "Black"],
+    "features": [
+      "Security monitoring",
+      "Indoor surveillance design",
+      "Video recording support",
+      "Compact design",
+      "Suitable for home and office security"
+    ]
+  },
+  {
+    "id": 110,
+    "img": "img/product/16.png",
+    "name_ar": "غسالة LG",
+    "name_en": "LG Washing Machine",
+    "price": 300.00,
+    "catetory": "electronics",
+    "rating": 5.0,
+    "rating_count": 64,
+    "colors": ["White", "Silver", "Dark Gray"],
+    "features": [
+      "Automatic washing system",
+      "Large washing capacity",
+      "Multiple washing programs",
+      "Modern design",
+      "Suitable for home use"
+    ]
+  },
+  {
+    "id": 111,
+    "img": "img/product/24.png",
+    "name_ar": "شاشة 40 بوصة SAMSUNG",
+    "name_en": "Samsung 40-inch TV",
+    "price": 125.00,
+    "catetory": "electronics",
+    "rating": 5.0,
+    "rating_count": 64,
+    "colors": ["Black", "Dark Gray"],
+    "features": [
+      "40-inch display",
+      "Large-screen viewing",
+      "Slim bezel design",
+      "Clear picture quality",
+      "Suitable for home entertainment"
+    ]
+  },
+  {
+    "id": 112,
+    "img": "img/product/9.png",
+    "name_ar": "ماسح باركود",
+    "name_en": "Barcode Scanner",
+    "price": 12.00,
+    "catetory": "device accessories",
+    "rating": 5.0,
+    "rating_count": 64,
+    "colors": ["Black", "White"],
+    "features": [
+      "Barcode scanning",
+      "Fast scanning operation",
+      "Compact design",
+      "Suitable for retail stores",
+      "Easy to use"
+    ]
+  },
+  {
+    "id": 113,
+    "img": "img/product/18.png",
+    "name_ar": "آيفون 8",
+    "name_en": "iPhone 8",
+    "price": 32.00,
+    "catetory": "electronics",
+    "rating": 5.0,
+    "rating_count": 64,
+    "colors": ["Black", "Silver", "Gold"],
+    "features": [
+      "Compact smartphone design",
+      "Touchscreen display",
+      "Rear camera",
+      "Fingerprint sensor",
+      "iOS operating system"
+    ]
+  },
+  {
+    "id": 114,
+    "img": "img/product/3.png",
+    "name_ar": "كاميرا SONY",
+    "name_en": "Sony Camera",
+    "price": 140.00,
+    "catetory": "electronics",
+    "rating": 5.0,
+    "rating_count": 64,
+    "colors": ["Black", "Silver"],
+    "features": [
+      "Digital camera",
+      "High-quality image capture",
+      "Portable design",
+      "Video recording support",
+      "Easy controls"
+    ]
+  },
+  {
+    "id": 115,
+    "img": "img/product/7.png",
+    "name_ar": "Hp zbook G6",
+    "name_en": "HP ZBook G6 Laptop",
+    "price": 224.00,
+    "catetory": "electronics",
+    "rating": 5.0,
+    "rating_count": 64,
+    "colors": ["Black", "Dark Gray"],
+    "features": [
+      "Professional workstation laptop",
+      "Portable design",
+      "Suitable for professional applications",
+      "Multiple connectivity options",
+      "Durable business-class construction"
+    ]
+  },
+  {
+    "id": 116,
+    "img": "img/product/OIP.jpg",
+    "name_ar": "سماعة gaming SAMSUNG",
+    "name_en": "Samsung Gaming Headset",
+    "price": 9.00,
+    "catetory": "device accessories",
+    "rating": 5.0,
+    "rating_count": 64,
+    "colors": ["Black", "Red"],
+    "features": [
+      "Gaming headset design",
+      "Built-in microphone",
+      "Comfortable ear cushions",
+      "Immersive gaming audio",
+      "Suitable for gaming and entertainment"
+    ]
+  },
+  {
+    "id": 117,
+    "img": "img/product/1OIP.jpg",
+    "name_ar": "سماعة gaming Lenovo",
+    "name_en": "Lenovo Gaming Headset",
+    "price": 7.00,
+    "catetory": "device accessories",
+    "rating": 5.0,
+    "rating_count": 64,
+    "colors": ["Black", "Red"],
+    "features": [
+      "Gaming headset design",
+      "Built-in microphone",
+      "Comfortable ear cushions",
+      "Gaming-focused audio",
+      "Suitable for computers and gaming"
+    ]
+  },
+  {
+    "id": 118,
+    "img": "img/product/3OIP.jpg",
+    "name_ar": "ساعة DIZO watch",
+    "name_en": "DIZO Smart Watch",
+    "price": 14.00,
+    "catetory": "electronics",
+    "rating": 5.0,
+    "rating_count": 64,
+    "colors": ["Black", "Blue", "Silver"],
+    "features": [
+      "Smart watch design",
+      "Digital display",
+      "Fitness-oriented features",
+      "Wearable design",
+      "Suitable for everyday use"
+    ]
+  },
+  {
+    "id": 119,
+    "img": "img/product/6118906480_1619076888.jpg",
+    "name_ar": "ساعة smart watch",
+    "name_en": "Smart Watch",
+    "price": 16.00,
+    "catetory": "electronics",
+    "rating": 5.0,
+    "rating_count": 64,
+    "colors": ["Black", "Blue", "Silver"],
+    "features": [
+      "Smart watch design",
+      "Digital display",
+      "Fitness tracking",
+      "Wearable design",
+      "Suitable for everyday use"
+    ]
+  },
+  {
+    "id": 120,
+    "img": "img/product/4OIP.jpg",
+    "name_ar": "لوحة مفاتيح gaming",
+    "name_en": "Gaming Keyboard",
+    "price": 11.00,
+    "catetory": "device accessories",
+    "rating": 5.0,
+    "rating_count": 64,
+    "colors": ["Black", "Red", "RGB"],
+    "features": [
+      "Gaming keyboard design",
+      "Comfortable key layout",
+      "Gaming-focused design",
+      "Durable construction",
+      "Suitable for PC gaming"
+    ]
+  },
+  {
+    "id": 121,
+    "img": "img/product/2OIP.jpg",
+    "name_ar": "ساعة damen",
+    "name_en": "Damen Watch",
+    "price": 14.00,
+    "catetory": "electronics",
+    "rating": 5.0,
+    "rating_count": 64,
+    "colors": ["Black", "Silver", "Gold"],
+    "features": [
+      "Modern watch design",
+      "Digital display",
+      "Comfortable wrist fit",
+      "Lightweight construction",
+      "Suitable for everyday use"
+    ]
+  },
+  {
+    "id": 122,
+    "img": "img/product/21.png",
+    "name_ar": "عصارة",
+    "name_en": "Juicer",
+    "price": 34.00,
+    "catetory": "electronics",
+    "rating": 5.0,
+    "rating_count": 64,
+    "colors": ["Black", "White", "Silver"],
+    "features": [
+      "Electric juicing system",
+      "Easy operation",
+      "Compact design",
+      "Easy to clean",
+      "Suitable for home use"
+    ]
+  },
+  {
+    "id": 123,
+    "img": "img/product/Raptor-Laptop-Cooling-Pad-3-in-1-Phone-Holder.jpg",
+    "name_ar": "قاعدة لابتوب مع التهوية",
+    "name_en": "Laptop Cooling Pad with Phone Holder",
+    "price": 9.00,
+    "catetory": "device accessories",
+    "rating": 5.0,
+    "rating_count": 64,
+    "colors": ["Black"],
+    "features": [
+      "Laptop cooling system",
+      "Built-in phone holder",
+      "Improved airflow",
+      "Ergonomic laptop support",
+      "Suitable for laptops and gaming"
+    ]
+  },
+  {
+    "id": 124,
+    "img": "img/product/gaming-laptop-cooler.jpg",
+    "name_ar": "مرواح ألعاب SONY",
+    "name_en": "Sony Gaming Laptop Cooling Fans",
+    "price": 18.00,
+    "catetory": "device accessories",
+    "rating": 5.0,
+    "rating_count": 64,
+    "colors": ["Black", "Red"],
+    "features": [
+      "Gaming laptop cooling",
+      "Cooling fan system",
+      "Improved airflow",
+      "Gaming-oriented design",
+      "Helps reduce device heat"
+    ]
+  },
+  {
+    "id": 125,
+    "img": "img/product/images (8).jpeg",
+    "name_ar": "فلاشة 64 GB",
+    "name_en": "64GB USB Flash Drive",
+    "price": 5.00,
+    "catetory": "device accessories",
+    "rating": 5.0,
+    "rating_count": 64,
+    "colors": ["Black", "Silver"],
+    "features": [
+      "64GB storage capacity",
+      "Portable design",
+      "Easy file transfer",
+      "Compact size",
+      "Suitable for computers and laptops"
+    ]
+  },
+  {
+    "id": 126,
+    "img": "img/product/images (8).jpeg",
+    "name_ar": "فلاشة 32 GB",
+    "name_en": "32GB USB Flash Drive",
+    "price": 3.00,
+    "catetory": "device accessories",
+    "rating": 5.0,
+    "rating_count": 64,
+    "colors": ["Black", "Silver"],
+    "features": [
+      "32GB storage capacity",
+      "Portable design",
+      "Easy file transfer",
+      "Compact size",
+      "Suitable for computers and laptops"
+    ]
+  },
+  {
+    "id": 127,
+    "img": "img/product/images (9).jpeg",
+    "name_ar": "هارد 1 تيرا",
+    "name_en": "1TB Hard Drive",
+    "price": 36.00,
+    "catetory": "device accessories",
+    "rating": 5.0,
+    "rating_count": 64,
+    "colors": ["Black", "Silver"],
+    "features": [
+      "1TB storage capacity",
+      "Portable storage design",
+      "Large data storage",
+      "Suitable for backup",
+      "Suitable for computers and laptops"
+    ]
+  },
+  {
+    "id": 128,
+    "img": "img/product/images (7).jpeg",
+    "name_ar": "مرواح تبريد hp",
+    "name_en": "HP Cooling Fans",
+    "price": 16.00,
+    "catetory": "device accessories",
+    "rating": 5.0,
+    "rating_count": 64,
+    "colors": ["Black"],
+    "features": [
+      "Laptop cooling fan",
+      "Designed for HP devices",
+      "Improved airflow",
+      "Helps reduce overheating",
+      "Easy installation"
+    ]
+  },
+  {
+    "id": 129,
+    "img": "img/product/JRF4RQR1SupoAhbDgl1z5eW6g9bpZ334Yaf27KzS.jpeg",
+    "name_ar": "شاحن hp",
+    "name_en": "HP Laptop Charger",
+    "price": 5.00,
+    "catetory": "device accessories",
+    "rating": 5.0,
+    "rating_count": 64,
+    "colors": ["Black"],
+    "features": [
+      "HP laptop charger",
+      "Power adapter design",
+      "Compact and portable",
+      "Suitable for compatible HP devices",
+      "Easy to carry"
+    ]
+  },
+  {
+    "id": 130,
+    "img": "img/product/images (10).jpeg",
+    "name_ar": "فلاشة هارد 512 GB",
+    "name_en": "512GB Portable Storage Drive",
+    "price": 25.00,
+    "catetory": "device accessories",
+    "rating": 5.0,
+    "rating_count": 64,
+    "colors": ["Black", "Silver"],
+    "features": [
+      "512GB storage capacity",
+      "Portable storage design",
+      "Large file storage",
+      "Easy data transfer",
+      "Suitable for computers and laptops"
+    ]
+  },
+  {
+    "id": 131,
+    "img": "img/product/cW5XnQaFmYbWWN8yhS5BIJlbgZGBIMLkbgQ67RyS.png",
+    "name_ar": "شاحن لينوفو",
+    "name_en": "Lenovo Laptop Charger",
+    "price": 6.00,
+    "catetory": "device accessories",
+    "rating": 5.0,
+    "rating_count": 64,
+    "colors": ["Black"],
+    "features": [
+      "Lenovo laptop charger",
+      "Power adapter design",
+      "Compact and portable",
+      "Suitable for compatible Lenovo devices",
+      "Easy to carry"
+    ]
+  },
+  {
+    "id": 132,
+    "img": "img/product/526a9793-ed2f-4627-a724-35acc70be695-1000x1000-a4yxsyEmotr0R85fUPsdSR8lHAGDkxUT2yuEZ95G.jpg",
+    "name_ar": "مرواح تبريد",
+    "name_en": "Cooling Fans",
+    "price": 9.00,
+    "catetory": "device accessories",
+    "rating": 5.0,
+    "rating_count": 64,
+    "colors": ["Black"],
+    "features": [
+      "Cooling fan system",
+      "Improved airflow",
+      "Helps reduce device heat",
+      "Compact design",
+      "Suitable for compatible devices"
+    ]
+  }
+]

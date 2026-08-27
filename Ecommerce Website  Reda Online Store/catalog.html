@@ -1,3 +1,4 @@
+```html
 <!DOCTYPE html>
 <html lang="ar" dir="rtl">
 
@@ -21,8 +22,10 @@
     <!-- شريط المسار والفرز -->
     <div class="catalog-header">
       <div class="breadcrumb">الرئيسية / جميع المنتجات</div>
+
       <div class="sort-wrapper">
         <label for="sort" class="sort-label">ترتيب حسب:</label>
+
         <select id="sort" class="sort-select">
           <option value="price-asc">الأقل سعراً</option>
           <option value="price-desc">الأعلى سعراً</option>
@@ -34,53 +37,81 @@
 
     <div class="catalog-container">
 
-      <!-- الشريط الجانبي (الفلاتر) -->
+      <!-- الشريط الجانبي -->
       <aside class="sidebar">
 
         <!-- فلتر الماركة -->
         <div class="filter-section">
           <h3 class="filter-title">الماركة</h3>
+
           <div class="filter-group">
-            <label class="filter-checkbox"><input type="checkbox" name="brand" value="apple"> Apple</label>
-            <label class="filter-checkbox"><input type="checkbox" name="brand" value="samsung"> Samsung</label>
-            <label class="filter-checkbox"><input type="checkbox" name="brand" value="sony"> Sony</label>
-            <label class="filter-checkbox"><input type="checkbox" name="brand" value="lg"> LG</label>
+            <label class="filter-checkbox">
+              <input type="checkbox" name="brand" value="apple">
+              Apple
+            </label>
+
+            <label class="filter-checkbox">
+              <input type="checkbox" name="brand" value="samsung">
+              Samsung
+            </label>
+
+            <label class="filter-checkbox">
+              <input type="checkbox" name="brand" value="sony">
+              Sony
+            </label>
+
+            <label class="filter-checkbox">
+              <input type="checkbox" name="brand" value="lg">
+              LG
+            </label>
           </div>
         </div>
 
         <!-- فلتر نطاق السعر -->
         <div class="filter-section">
           <h3 class="filter-title">نطاق السعر</h3>
+
           <div class="price-inputs">
             <input type="number" placeholder="من" min="0" id="min-price">
             <span>-</span>
             <input type="number" placeholder="إلى" min="0" id="max-price">
           </div>
-          <button class="btn-filter-apply" type="button">تطبيق</button>
+
+          <button class="btn-filter-apply" type="button">
+            تطبيق
+          </button>
         </div>
 
         <!-- فلتر التقييم -->
         <div class="filter-section">
           <h3 class="filter-title">التقييم</h3>
+
           <div class="filter-group">
+
             <label class="rating-option">
               <input type="radio" name="rating-filter" value="4">
               <span class="stars">★★★★☆</span>
               <span class="rating-text">فأعلى</span>
             </label>
+
             <label class="rating-option">
               <input type="radio" name="rating-filter" value="3">
               <span class="stars">★★★☆☆</span>
               <span class="rating-text">فأعلى</span>
             </label>
+
           </div>
         </div>
 
         <!-- فلتر التوفر -->
         <div class="filter-section">
           <h3 class="filter-title">التوفر</h3>
+
           <div class="filter-group">
-            <label class="filter-checkbox"><input type="checkbox" id="in-stock" name="stock"> متوفر في المخزون فقط</label>
+            <label class="filter-checkbox">
+              <input type="checkbox" id="in-stock" name="stock">
+              متوفر في المخزون فقط
+            </label>
           </div>
         </div>
 
@@ -89,21 +120,24 @@
       <!-- شبكة المنتجات -->
       <section class="products-grid">
 
-        <!-- منتج 1 -->
+        <!-- المنتج 1 -->
         <div class="product-card" data-id="101">
+
           <button class="btn-wishlist" aria-label="أضف للمفضلة" title="أضف للمفضلة">
-            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none"
+              stroke="currentColor" stroke-width="2">
               <path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"></path>
             </svg>
           </button>
 
-          <a href="product-detail.html" class="product-link">
-            <img src="img/product/0.png" alt="شاشة LG FHD" class="product-image" loading="lazy">
+          <a href="product-detail.html?id=101" class="product-link">
+            <img src="img/product/0.png" alt="شاشة LG FHD"
+              class="product-image" loading="lazy">
             <h2 class="product-title">شاشة LG FHD</h2>
           </a>
 
           <div class="product-price-box">
-            <span class="product-price">60,000 ريال</span>
+            <span class="product-price">$145.00</span>
           </div>
 
           <div class="product-rating">
@@ -112,32 +146,38 @@
           </div>
 
           <button class="btn-add-cart" data-id="101">
-            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="none"
+              stroke="currentColor" stroke-width="2">
               <circle cx="9" cy="21" r="1"></circle>
               <circle cx="20" cy="21" r="1"></circle>
               <path d="M1 1h4l2.68 13.39a2 2 0 0 0 2 1.61h9.72a2 2 0 0 0 2-1.61L23 6H6"></path>
             </svg>
             أضف إلى السلة
           </button>
+
         </div>
 
-        <!-- منتج 2 (مع خصم) -->
+        <!-- المنتج 2 -->
         <div class="product-card" data-id="102">
+
           <span class="badge discount">-10%</span>
+
           <button class="btn-wishlist" aria-label="أضف للمفضلة" title="أضف للمفضلة">
-            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none"
+              stroke="currentColor" stroke-width="2">
               <path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"></path>
             </svg>
           </button>
 
-          <a href="product-detail.html" class="product-link">
-            <img src="img/product/1.png" alt="TECHNO 7" class="product-image" loading="lazy">
+          <a href="product-detail.html?id=102" class="product-link">
+            <img src="img/product/1.png" alt="TECHNO 7"
+              class="product-image" loading="lazy">
             <h2 class="product-title">TECHNO 7</h2>
           </a>
 
           <div class="product-price-box">
-            <span class="product-price">10,500 ريال</span>
-            <span class="old-price">12,000 ريال</span>
+            <span class="product-price">$28.00</span>
+            <span class="old-price">$31.00</span>
           </div>
 
           <div class="product-rating">
@@ -146,30 +186,35 @@
           </div>
 
           <button class="btn-add-cart" data-id="102">
-            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="none"
+              stroke="currentColor" stroke-width="2">
               <circle cx="9" cy="21" r="1"></circle>
               <circle cx="20" cy="21" r="1"></circle>
               <path d="M1 1h4l2.68 13.39a2 2 0 0 0 2 1.61h9.72a2 2 0 0 0 2-1.61L23 6H6"></path>
             </svg>
             أضف إلى السلة
           </button>
+
         </div>
 
-        <!-- منتج 3 -->
+        <!-- المنتج 3 -->
         <div class="product-card" data-id="103">
+
           <button class="btn-wishlist" aria-label="أضف للمفضلة" title="أضف للمفضلة">
-            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-              <path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"></path>
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none"
+              stroke="currentColor" stroke-width="2">
+              <path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0-7.78 7.78z"></path>
             </svg>
           </button>
 
-          <a href="product-detail.html" class="product-link">
-            <img src="img/product/11.png" alt="هواوي Y8" class="product-image" loading="lazy">
+          <a href="product-detail.html?id=103" class="product-link">
+            <img src="img/product/11.png" alt="هواوي Y8"
+              class="product-image" loading="lazy">
             <h2 class="product-title">هواوي Y8</h2>
           </a>
 
           <div class="product-price-box">
-            <span class="product-price">25,000 ريال</span>
+            <span class="product-price">$65.00</span>
           </div>
 
           <div class="product-rating">
@@ -178,30 +223,35 @@
           </div>
 
           <button class="btn-add-cart" data-id="103">
-            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="none"
+              stroke="currentColor" stroke-width="2">
               <circle cx="9" cy="21" r="1"></circle>
               <circle cx="20" cy="21" r="1"></circle>
               <path d="M1 1h4l2.68 13.39a2 2 0 0 0 2 1.61h9.72a2 2 0 0 0 2-1.61L23 6H6"></path>
             </svg>
             أضف إلى السلة
           </button>
+
         </div>
 
-        <!-- منتج 4 -->
+        <!-- المنتج 4 -->
         <div class="product-card" data-id="104">
+
           <button class="btn-wishlist" aria-label="أضف للمفضلة" title="أضف للمفضلة">
-            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none"
+              stroke="currentColor" stroke-width="2">
               <path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"></path>
             </svg>
           </button>
 
-          <a href="product-detail.html" class="product-link">
-            <img src="img/product/10.png" alt="داتا شو" class="product-image" loading="lazy">
+          <a href="product-detail.html?id=104" class="product-link">
+            <img src="img/product/10.png" alt="داتا شو"
+              class="product-image" loading="lazy">
             <h2 class="product-title">داتا شو</h2>
           </a>
 
           <div class="product-price-box">
-            <span class="product-price">15,000 ريال</span>
+            <span class="product-price">$39.00</span>
           </div>
 
           <div class="product-rating">
@@ -210,30 +260,35 @@
           </div>
 
           <button class="btn-add-cart" data-id="104">
-            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="none"
+              stroke="currentColor" stroke-width="2">
               <circle cx="9" cy="21" r="1"></circle>
               <circle cx="20" cy="21" r="1"></circle>
               <path d="M1 1h4l2.68 13.39a2 2 0 0 0 2 1.61h9.72a2 2 0 0 0 2-1.61L23 6H6"></path>
             </svg>
             أضف إلى السلة
           </button>
+
         </div>
 
-        <!-- منتج 5 -->
+        <!-- المنتج 5 -->
         <div class="product-card" data-id="105">
+
           <button class="btn-wishlist" aria-label="أضف للمفضلة" title="أضف للمفضلة">
-            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-              <path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"></path>
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none"
+              stroke="currentColor" stroke-width="2">
+              <path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0-7.78 0z"></path>
             </svg>
           </button>
 
-          <a href="product-detail.html" class="product-link">
-            <img src="img/product/12.png" alt="طابعة حراري epson" class="product-image" loading="lazy">
+          <a href="product-detail.html?id=105" class="product-link">
+            <img src="img/product/12.png" alt="طابعة حراري epson"
+              class="product-image" loading="lazy">
             <h2 class="product-title">طابعة حراري epson</h2>
           </a>
 
           <div class="product-price-box">
-            <span class="product-price">12,000 ريال</span>
+            <span class="product-price">$31.00</span>
           </div>
 
           <div class="product-rating">
@@ -242,30 +297,35 @@
           </div>
 
           <button class="btn-add-cart" data-id="105">
-            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="none"
+              stroke="currentColor" stroke-width="2">
               <circle cx="9" cy="21" r="1"></circle>
               <circle cx="20" cy="21" r="1"></circle>
               <path d="M1 1h4l2.68 13.39a2 2 0 0 0 2 1.61h9.72a2 2 0 0 0 2-1.61L23 6H6"></path>
             </svg>
             أضف إلى السلة
           </button>
+
         </div>
 
-        <!-- منتج 6 -->
+        <!-- المنتج 6 -->
         <div class="product-card" data-id="106">
+
           <button class="btn-wishlist" aria-label="أضف للمفضلة" title="أضف للمفضلة">
-            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-              <path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"></path>
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none"
+              stroke="currentColor" stroke-width="2">
+              <path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0-7.78 0z"></path>
             </svg>
           </button>
 
-          <a href="product-detail.html" class="product-link">
-            <img src="img/product/20.png" alt="عصارة" class="product-image" loading="lazy">
+          <a href="product-detail.html?id=106" class="product-link">
+            <img src="img/product/20.png" alt="عصارة"
+              class="product-image" loading="lazy">
             <h2 class="product-title">عصارة</h2>
           </a>
 
           <div class="product-price-box">
-            <span class="product-price">35,000 ريال</span>
+            <span class="product-price">$92.00</span>
           </div>
 
           <div class="product-rating">
@@ -274,30 +334,35 @@
           </div>
 
           <button class="btn-add-cart" data-id="106">
-            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="none"
+              stroke="currentColor" stroke-width="2">
               <circle cx="9" cy="21" r="1"></circle>
               <circle cx="20" cy="21" r="1"></circle>
               <path d="M1 1h4l2.68 13.39a2 2 0 0 0 2 1.61h9.72a2 2 0 0 0 2-1.61L23 6H6"></path>
             </svg>
             أضف إلى السلة
           </button>
+
         </div>
 
-        <!-- منتج 7 -->
+        <!-- المنتج 7 -->
         <div class="product-card" data-id="107">
+
           <button class="btn-wishlist" aria-label="أضف للمفضلة" title="أضف للمفضلة">
-            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-              <path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"></path>
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none"
+              stroke="currentColor" stroke-width="2">
+              <path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0-7.78 0z"></path>
             </svg>
           </button>
 
-          <a href="product-detail.html" class="product-link">
-            <img src="img/product/2.png" alt="hp elit G5" class="product-image" loading="lazy">
+          <a href="product-detail.html?id=107" class="product-link">
+            <img src="img/product/2.png" alt="hp elit G5"
+              class="product-image" loading="lazy">
             <h2 class="product-title">hp elit G5</h2>
           </a>
 
           <div class="product-price-box">
-            <span class="product-price">120,000 ريال</span>
+            <span class="product-price">$315.00</span>
           </div>
 
           <div class="product-rating">
@@ -306,30 +371,35 @@
           </div>
 
           <button class="btn-add-cart" data-id="107">
-            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="none"
+              stroke="currentColor" stroke-width="2">
               <circle cx="9" cy="21" r="1"></circle>
               <circle cx="20" cy="21" r="1"></circle>
               <path d="M1 1h4l2.68 13.39a2 2 0 0 0 2 1.61h9.72a2 2 0 0 0 2-1.61L23 6H6"></path>
             </svg>
             أضف إلى السلة
           </button>
+
         </div>
 
-        <!-- منتج 8 -->
+        <!-- المنتج 8 -->
         <div class="product-card" data-id="108">
+
           <button class="btn-wishlist" aria-label="أضف للمفضلة" title="أضف للمفضلة">
-            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none"
+              stroke="currentColor" stroke-width="2">
               <path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"></path>
             </svg>
           </button>
 
-          <a href="product-detail.html" class="product-link">
-            <img src="img/product/15.png" alt="سامسونج s9+" class="product-image" loading="lazy">
+          <a href="product-detail.html?id=108" class="product-link">
+            <img src="img/product/15.png" alt="سامسونج s9+"
+              class="product-image" loading="lazy">
             <h2 class="product-title">سامسونج s9+</h2>
           </a>
 
           <div class="product-price-box">
-            <span class="product-price">64,000 ريال</span>
+            <span class="product-price">$168.00</span>
           </div>
 
           <div class="product-rating">
@@ -338,30 +408,35 @@
           </div>
 
           <button class="btn-add-cart" data-id="108">
-            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="none"
+              stroke="currentColor" stroke-width="2">
               <circle cx="9" cy="21" r="1"></circle>
               <circle cx="20" cy="21" r="1"></circle>
               <path d="M1 1h4l2.68 13.39a2 2 0 0 0 2 1.61h9.72a2 2 0 0 0 2-1.61L23 6H6"></path>
             </svg>
             أضف إلى السلة
           </button>
+
         </div>
 
-        <!-- منتج 9 -->
+        <!-- المنتج 9 -->
         <div class="product-card" data-id="109">
+
           <button class="btn-wishlist" aria-label="أضف للمفضلة" title="أضف للمفضلة">
-            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-              <path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"></path>
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none"
+              stroke="currentColor" stroke-width="2">
+              <path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0-7.78 0z"></path>
             </svg>
           </button>
 
-          <a href="product-detail.html" class="product-link">
-            <img src="img/product/17.png" alt="كاميرا مراقبة SAMSUNG" class="product-image" loading="lazy">
+          <a href="product-detail.html?id=109" class="product-link">
+            <img src="img/product/17.png" alt="كاميرا مراقبة SAMSUNG"
+              class="product-image" loading="lazy">
             <h2 class="product-title">كاميرا مراقبة SAMSUNG</h2>
           </a>
 
           <div class="product-price-box">
-            <span class="product-price">19,000 ريال</span>
+            <span class="product-price">$50.00</span>
           </div>
 
           <div class="product-rating">
@@ -370,30 +445,35 @@
           </div>
 
           <button class="btn-add-cart" data-id="109">
-            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="none"
+              stroke="currentColor" stroke-width="2">
               <circle cx="9" cy="21" r="1"></circle>
               <circle cx="20" cy="21" r="1"></circle>
               <path d="M1 1h4l2.68 13.39a2 2 0 0 0 2 1.61h9.72a2 2 0 0 0 2-1.61L23 6H6"></path>
             </svg>
             أضف إلى السلة
           </button>
+
         </div>
 
-        <!-- منتج 10 -->
+        <!-- المنتج 10 -->
         <div class="product-card" data-id="110">
+
           <button class="btn-wishlist" aria-label="أضف للمفضلة" title="أضف للمفضلة">
-            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-              <path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"></path>
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none"
+              stroke="currentColor" stroke-width="2">
+              <path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0-7.78 0z"></path>
             </svg>
           </button>
 
-          <a href="product-detail.html" class="product-link">
-            <img src="img/product/16.png" alt="غسالة LG" class="product-image" loading="lazy">
+          <a href="product-detail.html?id=110" class="product-link">
+            <img src="img/product/16.png" alt="غسالة LG"
+              class="product-image" loading="lazy">
             <h2 class="product-title">غسالة LG</h2>
           </a>
 
           <div class="product-price-box">
-            <span class="product-price">115,000 ريال</span>
+            <span class="product-price">$300.00</span>
           </div>
 
           <div class="product-rating">
@@ -402,30 +482,35 @@
           </div>
 
           <button class="btn-add-cart" data-id="110">
-            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="none"
+              stroke="currentColor" stroke-width="2">
               <circle cx="9" cy="21" r="1"></circle>
               <circle cx="20" cy="21" r="1"></circle>
               <path d="M1 1h4l2.68 13.39a2 2 0 0 0 2 1.61h9.72a2 2 0 0 0 2-1.61L23 6H6"></path>
             </svg>
             أضف إلى السلة
           </button>
+
         </div>
 
-        <!-- منتج 11 -->
+        <!-- المنتج 11 -->
         <div class="product-card" data-id="111">
+
           <button class="btn-wishlist" aria-label="أضف للمفضلة" title="أضف للمفضلة">
-            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-              <path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"></path>
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none"
+              stroke="currentColor" stroke-width="2">
+              <path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0-7.78 0z"></path>
             </svg>
           </button>
 
-          <a href="product-detail.html" class="product-link">
-            <img src="img/product/24.png" alt="شاشة 40 بوصة SAMSUNG" class="product-image" loading="lazy">
+          <a href="product-detail.html?id=111" class="product-link">
+            <img src="img/product/24.png" alt="شاشة 40 بوصة SAMSUNG"
+              class="product-image" loading="lazy">
             <h2 class="product-title">شاشة 40 بوصة SAMSUNG</h2>
           </a>
 
           <div class="product-price-box">
-            <span class="product-price">48,000 ريال</span>
+            <span class="product-price">$125.00</span>
           </div>
 
           <div class="product-rating">
@@ -434,30 +519,35 @@
           </div>
 
           <button class="btn-add-cart" data-id="111">
-            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="none"
+              stroke="currentColor" stroke-width="2">
               <circle cx="9" cy="21" r="1"></circle>
               <circle cx="20" cy="21" r="1"></circle>
-              <path d="M1 1h4l2.68 13.39a2 2 0 0 0 2 1.61h9.72a2 2 0 0 0 2-1.61L23 6H6"></path>
+              <path d="M1 1h4l2.68 13.39a2 2 0 0 0 2 1.61h9.72a2 2 0 0 0 2 1.61L23 6H6"></path>
             </svg>
             أضف إلى السلة
           </button>
+
         </div>
 
-        <!-- منتج 12 -->
+        <!-- المنتج 12 -->
         <div class="product-card" data-id="112">
+
           <button class="btn-wishlist" aria-label="أضف للمفضلة" title="أضف للمفضلة">
-            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-              <path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"></path>
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none"
+              stroke="currentColor" stroke-width="2">
+              <path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0-7.78 0z"></path>
             </svg>
           </button>
 
-          <a href="product-detail.html" class="product-link">
-            <img src="img/product/9.png" alt="ماسح باركود" class="product-image" loading="lazy">
+          <a href="product-detail.html?id=112" class="product-link">
+            <img src="img/product/9.png" alt="ماسح باركود"
+              class="product-image" loading="lazy">
             <h2 class="product-title">ماسح باركود</h2>
           </a>
 
           <div class="product-price-box">
-            <span class="product-price">3,500 ريال</span>
+            <span class="product-price">$12.00</span>
           </div>
 
           <div class="product-rating">
@@ -466,30 +556,35 @@
           </div>
 
           <button class="btn-add-cart" data-id="112">
-            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="none"
+              stroke="currentColor" stroke-width="2">
               <circle cx="9" cy="21" r="1"></circle>
               <circle cx="20" cy="21" r="1"></circle>
-              <path d="M1 1h4l2.68 13.39a2 2 0 0 0 2 1.61h9.72a2 2 0 0 0 2-1.61L23 6H6"></path>
+              <path d="M1 1h4l2.68 13.39a2 2 0 0 0 2 1.61h9.72a2 2 0 0 0 2 1.61L23 6H6"></path>
             </svg>
             أضف إلى السلة
           </button>
+
         </div>
 
-        <!-- منتج 13 -->
+        <!-- المنتج 13 -->
         <div class="product-card" data-id="113">
+
           <button class="btn-wishlist" aria-label="أضف للمفضلة" title="أضف للمفضلة">
-            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-              <path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"></path>
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none"
+              stroke="currentColor" stroke-width="2">
+              <path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0-7.78 0z"></path>
             </svg>
           </button>
 
-          <a href="product-detail.html" class="product-link">
-            <img src="img/product/18.png" alt="آيفون 8" class="product-image" loading="lazy">
+          <a href="product-detail.html?id=113" class="product-link">
+            <img src="img/product/18.png" alt="آيفون 8"
+              class="product-image" loading="lazy">
             <h2 class="product-title">آيفون 8</h2>
           </a>
 
           <div class="product-price-box">
-            <span class="product-price">32,000 ريال</span>
+            <span class="product-price">$32.00</span>
           </div>
 
           <div class="product-rating">
@@ -498,30 +593,35 @@
           </div>
 
           <button class="btn-add-cart" data-id="113">
-            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="none"
+              stroke="currentColor" stroke-width="2">
               <circle cx="9" cy="21" r="1"></circle>
               <circle cx="20" cy="21" r="1"></circle>
-              <path d="M1 1h4l2.68 13.39a2 2 0 0 0 2 1.61h9.72a2 2 0 0 0 2-1.61L23 6H6"></path>
+              <path d="M1 1h4l2.68 13.39a2 2 0 0 0 2 1.61h9.72a2 2 0 0 0 2 1.61L23 6H6"></path>
             </svg>
             أضف إلى السلة
           </button>
+
         </div>
 
-        <!-- منتج 14 -->
+        <!-- المنتج 14 -->
         <div class="product-card" data-id="114">
+
           <button class="btn-wishlist" aria-label="أضف للمفضلة" title="أضف للمفضلة">
-            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-              <path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"></path>
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none"
+              stroke="currentColor" stroke-width="2">
+              <path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0-7.78 0z"></path>
             </svg>
           </button>
 
-          <a href="product-detail.html" class="product-link">
-            <img src="img/product/3.png" alt="كاميرا SONY" class="product-image" loading="lazy">
+          <a href="product-detail.html?id=114" class="product-link">
+            <img src="img/product/3.png" alt="كاميرا SONY"
+              class="product-image" loading="lazy">
             <h2 class="product-title">كاميرا SONY</h2>
           </a>
 
           <div class="product-price-box">
-            <span class="product-price">140,000 ريال</span>
+            <span class="product-price">$140.00</span>
           </div>
 
           <div class="product-rating">
@@ -530,30 +630,35 @@
           </div>
 
           <button class="btn-add-cart" data-id="114">
-            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="none"
+              stroke="currentColor" stroke-width="2">
               <circle cx="9" cy="21" r="1"></circle>
               <circle cx="20" cy="21" r="1"></circle>
-              <path d="M1 1h4l2.68 13.39a2 2 0 0 0 2 1.61h9.72a2 2 0 0 0 2-1.61L23 6H6"></path>
+              <path d="M1 1h4l2.68 13.39a2 2 0 0 0 2 1.61h9.72a2 2 0 0 0 2 1.61L23 6H6"></path>
             </svg>
             أضف إلى السلة
           </button>
+
         </div>
 
-        <!-- منتج 15 -->
+        <!-- المنتج 15 -->
         <div class="product-card" data-id="115">
+
           <button class="btn-wishlist" aria-label="أضف للمفضلة" title="أضف للمفضلة">
-            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-              <path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"></path>
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none"
+              stroke="currentColor" stroke-width="2">
+              <path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0-7.78 0z"></path>
             </svg>
           </button>
 
-          <a href="product-detail.html" class="product-link">
-            <img src="img/product/7.png" alt="Hp zbook G6" class="product-image" loading="lazy">
+          <a href="product-detail.html?id=115" class="product-link">
+            <img src="img/product/7.png" alt="Hp zbook G6"
+              class="product-image" loading="lazy">
             <h2 class="product-title">Hp zbook G6</h2>
           </a>
 
           <div class="product-price-box">
-            <span class="product-price">224,000 ريال</span>
+            <span class="product-price">$224.00</span>
           </div>
 
           <div class="product-rating">
@@ -562,30 +667,35 @@
           </div>
 
           <button class="btn-add-cart" data-id="115">
-            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="none"
+              stroke="currentColor" stroke-width="2">
               <circle cx="9" cy="21" r="1"></circle>
               <circle cx="20" cy="21" r="1"></circle>
-              <path d="M1 1h4l2.68 13.39a2 2 0 0 0 2 1.61h9.72a2 2 0 0 0 2-1.61L23 6H6"></path>
+              <path d="M1 1h4l2.68 13.39a2 2 0 0 0 2 1.61h9.72a2 2 0 0 0 2 1.61L23 6H6"></path>
             </svg>
             أضف إلى السلة
           </button>
+
         </div>
 
-        <!-- منتج 16 -->
+        <!-- المنتج 16 -->
         <div class="product-card" data-id="116">
+
           <button class="btn-wishlist" aria-label="أضف للمفضلة" title="أضف للمفضلة">
-            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-              <path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"></path>
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none"
+              stroke="currentColor" stroke-width="2">
+              <path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0-7.78 0z"></path>
             </svg>
           </button>
 
-          <a href="product-detail.html" class="product-link">
-            <img src="img/product/OIP.jpg" alt="سماعة gaming SAMSUNG" class="product-image" loading="lazy">
+          <a href="product-detail.html?id=116" class="product-link">
+            <img src="img/product/OIP.jpg" alt="سماعة gaming SAMSUNG"
+              class="product-image" loading="lazy">
             <h2 class="product-title">سماعة gaming SAMSUNG</h2>
           </a>
 
           <div class="product-price-box">
-            <span class="product-price">6,500 ريال</span>
+            <span class="product-price">$9.00</span>
           </div>
 
           <div class="product-rating">
@@ -594,30 +704,35 @@
           </div>
 
           <button class="btn-add-cart" data-id="116">
-            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="none"
+              stroke="currentColor" stroke-width="2">
               <circle cx="9" cy="21" r="1"></circle>
               <circle cx="20" cy="21" r="1"></circle>
-              <path d="M1 1h4l2.68 13.39a2 2 0 0 0 2 1.61h9.72a2 2 0 0 0 2-1.61L23 6H6"></path>
+              <path d="M1 1h4l2.68 13.39a2 2 0 0 0 2 1.61h9.72a2 2 0 0 0 2 1.61L23 6H6"></path>
             </svg>
             أضف إلى السلة
           </button>
+
         </div>
 
-        <!-- منتج 17 -->
+        <!-- المنتج 17 -->
         <div class="product-card" data-id="117">
+
           <button class="btn-wishlist" aria-label="أضف للمفضلة" title="أضف للمفضلة">
-            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-              <path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"></path>
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none"
+              stroke="currentColor" stroke-width="2">
+              <path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"></path>
             </svg>
           </button>
 
-          <a href="product-detail.html" class="product-link">
-            <img src="img/product/1OIP.jpg" alt="سماعة gaming Lenovo" class="product-image" loading="lazy">
+          <a href="product-detail.html?id=117" class="product-link">
+            <img src="img/product/1OIP.jpg" alt="سماعة gaming Lenovo"
+              class="product-image" loading="lazy">
             <h2 class="product-title">سماعة gaming Lenovo</h2>
           </a>
 
           <div class="product-price-box">
-            <span class="product-price">5,000 ريال</span>
+            <span class="product-price">$7.00</span>
           </div>
 
           <div class="product-rating">
@@ -626,30 +741,35 @@
           </div>
 
           <button class="btn-add-cart" data-id="117">
-            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="none"
+              stroke="currentColor" stroke-width="2">
               <circle cx="9" cy="21" r="1"></circle>
               <circle cx="20" cy="21" r="1"></circle>
-              <path d="M1 1h4l2.68 13.39a2 2 0 0 0 2 1.61h9.72a2 2 0 0 0 2-1.61L23 6H6"></path>
+              <path d="M1 1h4l2.68 13.39a2 2 0 0 0 2 1.61h9.72a2 2 0 0 0 2 1.61L23 6H6"></path>
             </svg>
             أضف إلى السلة
           </button>
+
         </div>
 
-        <!-- منتج 18 -->
+        <!-- المنتج 18 -->
         <div class="product-card" data-id="118">
+
           <button class="btn-wishlist" aria-label="أضف للمفضلة" title="أضف للمفضلة">
-            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-              <path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"></path>
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none"
+              stroke="currentColor" stroke-width="2">
+              <path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0-7.78 0z"></path>
             </svg>
           </button>
 
-          <a href="product-detail.html" class="product-link">
-            <img src="img/product/3OIP.jpg" alt="ساعة DIZO watch" class="product-image" loading="lazy">
+          <a href="product-detail.html?id=118" class="product-link">
+            <img src="img/product/3OIP.jpg" alt="ساعة DIZO watch"
+              class="product-image" loading="lazy">
             <h2 class="product-title">ساعة DIZO watch</h2>
           </a>
 
           <div class="product-price-box">
-            <span class="product-price">12,000 ريال</span>
+            <span class="product-price">$14.00</span>
           </div>
 
           <div class="product-rating">
@@ -658,30 +778,35 @@
           </div>
 
           <button class="btn-add-cart" data-id="118">
-            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="none"
+              stroke="currentColor" stroke-width="2">
               <circle cx="9" cy="21" r="1"></circle>
               <circle cx="20" cy="21" r="1"></circle>
-              <path d="M1 1h4l2.68 13.39a2 2 0 0 0 2 1.61h9.72a2 2 0 0 0 2-1.61L23 6H6"></path>
+              <path d="M1 1h4l2.68 13.39a2 2 0 0 0 2 1.61h9.72a2 2 0 0 0 2 1.61L23 6H6"></path>
             </svg>
             أضف إلى السلة
           </button>
+
         </div>
 
-        <!-- منتج 19 -->
+        <!-- المنتج 19 -->
         <div class="product-card" data-id="119">
+
           <button class="btn-wishlist" aria-label="أضف للمفضلة" title="أضف للمفضلة">
-            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-              <path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"></path>
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none"
+              stroke="currentColor" stroke-width="2">
+              <path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0-7.78 0z"></path>
             </svg>
           </button>
 
-          <a href="product-detail.html" class="product-link">
-            <img src="img/product/6118906480_1619076888.jpg" alt="ساعة smart watch" class="product-image" loading="lazy">
+          <a href="product-detail.html?id=119" class="product-link">
+            <img src="img/product/6118906480_1619076888.jpg"
+              alt="ساعة smart watch" class="product-image" loading="lazy">
             <h2 class="product-title">ساعة smart watch</h2>
           </a>
 
           <div class="product-price-box">
-            <span class="product-price">13,500 ريال</span>
+            <span class="product-price">$16.00</span>
           </div>
 
           <div class="product-rating">
@@ -690,30 +815,35 @@
           </div>
 
           <button class="btn-add-cart" data-id="119">
-            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="none"
+              stroke="currentColor" stroke-width="2">
               <circle cx="9" cy="21" r="1"></circle>
               <circle cx="20" cy="21" r="1"></circle>
-              <path d="M1 1h4l2.68 13.39a2 2 0 0 0 2 1.61h9.72a2 2 0 0 0 2-1.61L23 6H6"></path>
+              <path d="M1 1h4l2.68 13.39a2 2 0 0 0 2 1.61h9.72a2 2 0 0 0 2 1.61L23 6H6"></path>
             </svg>
             أضف إلى السلة
           </button>
+
         </div>
 
-        <!-- منتج 20 -->
+        <!-- المنتج 20 -->
         <div class="product-card" data-id="120">
+
           <button class="btn-wishlist" aria-label="أضف للمفضلة" title="أضف للمفضلة">
-            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-              <path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"></path>
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none"
+              stroke="currentColor" stroke-width="2">
+              <path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0-7.78 0z"></path>
             </svg>
           </button>
 
-          <a href="product-detail.html" class="product-link">
-            <img src="img/product/4OIP.jpg" alt="لوحة مفاتيح gaming" class="product-image" loading="lazy">
+          <a href="product-detail.html?id=120" class="product-link">
+            <img src="img/product/4OIP.jpg" alt="لوحة مفاتيح gaming"
+              class="product-image" loading="lazy">
             <h2 class="product-title">لوحة مفاتيح gaming</h2>
           </a>
 
           <div class="product-price-box">
-            <span class="product-price">9,500 ريال</span>
+            <span class="product-price">$11.00</span>
           </div>
 
           <div class="product-rating">
@@ -722,30 +852,35 @@
           </div>
 
           <button class="btn-add-cart" data-id="120">
-            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="none"
+              stroke="currentColor" stroke-width="2">
               <circle cx="9" cy="21" r="1"></circle>
               <circle cx="20" cy="21" r="1"></circle>
-              <path d="M1 1h4l2.68 13.39a2 2 0 0 0 2 1.61h9.72a2 2 0 0 0 2-1.61L23 6H6"></path>
+              <path d="M1 1h4l2.68 13.39a2 2 0 0 0 2 1.61h9.72a2 2 0 0 0 2 1.61L23 6H6"></path>
             </svg>
             أضف إلى السلة
           </button>
+
         </div>
 
-        <!-- منتج 21 -->
+        <!-- المنتج 21 -->
         <div class="product-card" data-id="121">
+
           <button class="btn-wishlist" aria-label="أضف للمفضلة" title="أضف للمفضلة">
-            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-              <path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"></path>
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none"
+              stroke="currentColor" stroke-width="2">
+              <path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0-7.78 0z"></path>
             </svg>
           </button>
 
-          <a href="product-detail.html" class="product-link">
-            <img src="img/product/2OIP.jpg" alt="ساعة damen" class="product-image" loading="lazy">
+          <a href="product-detail.html?id=121" class="product-link">
+            <img src="img/product/2OIP.jpg" alt="ساعة damen"
+              class="product-image" loading="lazy">
             <h2 class="product-title">ساعة damen</h2>
           </a>
 
           <div class="product-price-box">
-            <span class="product-price">14,000 ريال</span>
+            <span class="product-price">$14.00</span>
           </div>
 
           <div class="product-rating">
@@ -754,30 +889,35 @@
           </div>
 
           <button class="btn-add-cart" data-id="121">
-            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="none"
+              stroke="currentColor" stroke-width="2">
               <circle cx="9" cy="21" r="1"></circle>
               <circle cx="20" cy="21" r="1"></circle>
-              <path d="M1 1h4l2.68 13.39a2 2 0 0 0 2 1.61h9.72a2 2 0 0 0 2-1.61L23 6H6"></path>
+              <path d="M1 1h4l2.68 13.39a2 2 0 0 0 2 1.61h9.72a2 2 0 0 0 2 1.61L23 6H6"></path>
             </svg>
             أضف إلى السلة
           </button>
+
         </div>
 
-        <!-- منتج 22 -->
+        <!-- المنتج 22 -->
         <div class="product-card" data-id="122">
+
           <button class="btn-wishlist" aria-label="أضف للمفضلة" title="أضف للمفضلة">
-            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-              <path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"></path>
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none"
+              stroke="currentColor" stroke-width="2">
+              <path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0-7.78 0z"></path>
             </svg>
           </button>
 
-          <a href="product-detail.html" class="product-link">
-            <img src="img/product/21.png" alt="عصارة" class="product-image" loading="lazy">
+          <a href="product-detail.html?id=122" class="product-link">
+            <img src="img/product/21.png" alt="عصارة"
+              class="product-image" loading="lazy">
             <h2 class="product-title">عصارة</h2>
           </a>
 
           <div class="product-price-box">
-            <span class="product-price">34,000 ريال</span>
+            <span class="product-price">$34.00</span>
           </div>
 
           <div class="product-rating">
@@ -786,30 +926,36 @@
           </div>
 
           <button class="btn-add-cart" data-id="122">
-            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="none"
+              stroke="currentColor" stroke-width="2">
               <circle cx="9" cy="21" r="1"></circle>
               <circle cx="20" cy="21" r="1"></circle>
-              <path d="M1 1h4l2.68 13.39a2 2 0 0 0 2 1.61h9.72a2 2 0 0 0 2-1.61L23 6H6"></path>
+              <path d="M1 1h4l2.68 13.39a2 2 0 0 0 2 1.61h9.72a2 2 0 0 0 2 1.61L23 6H6"></path>
             </svg>
             أضف إلى السلة
           </button>
+
         </div>
 
-        <!-- منتج 23 -->
+        <!-- المنتج 23 -->
         <div class="product-card" data-id="123">
+
           <button class="btn-wishlist" aria-label="أضف للمفضلة" title="أضف للمفضلة">
-            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-              <path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"></path>
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none"
+              stroke="currentColor" stroke-width="2">
+              <path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0-7.78 0z"></path>
             </svg>
           </button>
 
-          <a href="product-detail.html" class="product-link">
-            <img src="img/product/Raptor-Laptop-Cooling-Pad-3-in-1-Phone-Holder.jpg" alt="قاعدة لابتوب مع التهوية" class="product-image" loading="lazy">
+          <a href="product-detail.html?id=123" class="product-link">
+            <img src="img/product/Raptor-Laptop-Cooling-Pad-3-in-1-Phone-Holder.jpg"
+              alt="قاعدة لابتوب مع التهوية"
+              class="product-image" loading="lazy">
             <h2 class="product-title">قاعدة لابتوب مع التهوية</h2>
           </a>
 
           <div class="product-price-box">
-            <span class="product-price">8,500 ريال</span>
+            <span class="product-price">$9.00</span>
           </div>
 
           <div class="product-rating">
@@ -818,30 +964,36 @@
           </div>
 
           <button class="btn-add-cart" data-id="123">
-            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="none"
+              stroke="currentColor" stroke-width="2">
               <circle cx="9" cy="21" r="1"></circle>
               <circle cx="20" cy="21" r="1"></circle>
-              <path d="M1 1h4l2.68 13.39a2 2 0 0 0 2 1.61h9.72a2 2 0 0 0 2-1.61L23 6H6"></path>
+              <path d="M1 1h4l2.68 13.39a2 2 0 0 0 2 1.61h9.72a2 2 0 0 0 2 1.61L23 6H6"></path>
             </svg>
             أضف إلى السلة
           </button>
+
         </div>
 
-        <!-- منتج 24 -->
+        <!-- المنتج 24 -->
         <div class="product-card" data-id="124">
+
           <button class="btn-wishlist" aria-label="أضف للمفضلة" title="أضف للمفضلة">
-            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-              <path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"></path>
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none"
+              stroke="currentColor" stroke-width="2">
+              <path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0-7.78 0z"></path>
             </svg>
           </button>
 
-          <a href="product-detail.html" class="product-link">
-            <img src="img/product/gaming-laptop-cooler.jpg" alt="مراوح ألعاب SONY" class="product-image" loading="lazy">
+          <a href="product-detail.html?id=124" class="product-link">
+            <img src="img/product/gaming-laptop-cooler.jpg"
+              alt="مراوح ألعاب SONY"
+              class="product-image" loading="lazy">
             <h2 class="product-title">مرواح ألعاب SONY</h2>
           </a>
 
           <div class="product-price-box">
-            <span class="product-price">18,500 ريال</span>
+            <span class="product-price">$18.00</span>
           </div>
 
           <div class="product-rating">
@@ -850,30 +1002,36 @@
           </div>
 
           <button class="btn-add-cart" data-id="124">
-            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="none"
+              stroke="currentColor" stroke-width="2">
               <circle cx="9" cy="21" r="1"></circle>
               <circle cx="20" cy="21" r="1"></circle>
-              <path d="M1 1h4l2.68 13.39a2 2 0 0 0 2 1.61h9.72a2 2 0 0 0 2-1.61L23 6H6"></path>
+              <path d="M1 1h4l2.68 13.39a2 2 0 0 0 2 1.61h9.72a2 2 0 0 0 2 1.61L23 6H6"></path>
             </svg>
             أضف إلى السلة
           </button>
+
         </div>
 
-        <!-- منتج 25 -->
+        <!-- المنتج 25 -->
         <div class="product-card" data-id="125">
+
           <button class="btn-wishlist" aria-label="أضف للمفضلة" title="أضف للمفضلة">
-            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-              <path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"></path>
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none"
+              stroke="currentColor" stroke-width="2">
+              <path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0-7.78 0z"></path>
             </svg>
           </button>
 
-          <a href="product-detail.html" class="product-link">
-            <img src="img/product/images (8).jpeg" alt="فلاشة 64 GB" class="product-image" loading="lazy">
+          <a href="product-detail.html?id=125" class="product-link">
+            <img src="img/product/images (8).jpeg"
+              alt="فلاشة 64 GB"
+              class="product-image" loading="lazy">
             <h2 class="product-title">فلاشة 64 GB</h2>
           </a>
 
           <div class="product-price-box">
-            <span class="product-price">4,500 ريال</span>
+            <span class="product-price">$5.00</span>
           </div>
 
           <div class="product-rating">
@@ -882,30 +1040,36 @@
           </div>
 
           <button class="btn-add-cart" data-id="125">
-            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="none"
+              stroke="currentColor" stroke-width="2">
               <circle cx="9" cy="21" r="1"></circle>
               <circle cx="20" cy="21" r="1"></circle>
-              <path d="M1 1h4l2.68 13.39a2 2 0 0 0 2 1.61h9.72a2 2 0 0 0 2-1.61L23 6H6"></path>
+              <path d="M1 1h4l2.68 13.39a2 2 0 0 0 2 1.61h9.72a2 2 0 0 0 2 1.61L23 6H6"></path>
             </svg>
             أضف إلى السلة
           </button>
+
         </div>
 
-        <!-- منتج 26 -->
+        <!-- المنتج 26 -->
         <div class="product-card" data-id="126">
+
           <button class="btn-wishlist" aria-label="أضف للمفضلة" title="أضف للمفضلة">
-            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-              <path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"></path>
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none"
+              stroke="currentColor" stroke-width="2">
+              <path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0-7.78 0z"></path>
             </svg>
           </button>
 
-          <a href="product-detail.html" class="product-link">
-            <img src="img/product/images (8).jpeg" alt="فلاشة 32 GB" class="product-image" loading="lazy">
+          <a href="product-detail.html?id=126" class="product-link">
+            <img src="img/product/images (8).jpeg"
+              alt="فلاشة 32 GB"
+              class="product-image" loading="lazy">
             <h2 class="product-title">فلاشة 32 GB</h2>
           </a>
 
           <div class="product-price-box">
-            <span class="product-price">2,500 ريال</span>
+            <span class="product-price">$3.00</span>
           </div>
 
           <div class="product-rating">
@@ -914,30 +1078,36 @@
           </div>
 
           <button class="btn-add-cart" data-id="126">
-            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="none"
+              stroke="currentColor" stroke-width="2">
               <circle cx="9" cy="21" r="1"></circle>
               <circle cx="20" cy="21" r="1"></circle>
-              <path d="M1 1h4l2.68 13.39a2 2 0 0 0 2 1.61h9.72a2 2 0 0 0 2-1.61L23 6H6"></path>
+              <path d="M1 1h4l2.68 13.39a2 2 0 0 0 2 1.61h9.72a2 2 0 0 0 2 1.61L23 6H6"></path>
             </svg>
             أضف إلى السلة
           </button>
+
         </div>
 
-        <!-- منتج 27 -->
+        <!-- المنتج 27 -->
         <div class="product-card" data-id="127">
+
           <button class="btn-wishlist" aria-label="أضف للمفضلة" title="أضف للمفضلة">
-            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-              <path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"></path>
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none"
+              stroke="currentColor" stroke-width="2">
+              <path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0-7.78 0z"></path>
             </svg>
           </button>
 
-          <a href="product-detail.html" class="product-link">
-            <img src="img/product/images (9).jpeg" alt="هارد 1 تيرا" class="product-image" loading="lazy">
+          <a href="product-detail.html?id=127" class="product-link">
+            <img src="img/product/images (9).jpeg"
+              alt="هارد 1 تيرا"
+              class="product-image" loading="lazy">
             <h2 class="product-title">هارد 1 تيرا</h2>
           </a>
 
           <div class="product-price-box">
-            <span class="product-price">36,000 ريال</span>
+            <span class="product-price">$36.00</span>
           </div>
 
           <div class="product-rating">
@@ -946,30 +1116,36 @@
           </div>
 
           <button class="btn-add-cart" data-id="127">
-            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="none"
+              stroke="currentColor" stroke-width="2">
               <circle cx="9" cy="21" r="1"></circle>
               <circle cx="20" cy="21" r="1"></circle>
-              <path d="M1 1h4l2.68 13.39a2 2 0 0 0 2 1.61h9.72a2 2 0 0 0 2-1.61L23 6H6"></path>
+              <path d="M1 1h4l2.68 13.39a2 2 0 0 0 2 1.61h9.72a2 2 0 0 0 2 1.61L23 6H6"></path>
             </svg>
             أضف إلى السلة
           </button>
+
         </div>
 
-        <!-- منتج 28 -->
+        <!-- المنتج 28 -->
         <div class="product-card" data-id="128">
+
           <button class="btn-wishlist" aria-label="أضف للمفضلة" title="أضف للمفضلة">
-            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-              <path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"></path>
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none"
+              stroke="currentColor" stroke-width="2">
+              <path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0-7.78 0z"></path>
             </svg>
           </button>
 
-          <a href="product-detail.html" class="product-link">
-            <img src="img/product/images (7).jpeg" alt="مراوح تبريد hp" class="product-image" loading="lazy">
+          <a href="product-detail.html?id=128" class="product-link">
+            <img src="img/product/images (7).jpeg"
+              alt="مراوح تبريد hp"
+              class="product-image" loading="lazy">
             <h2 class="product-title">مرواح تبريد hp</h2>
           </a>
 
           <div class="product-price-box">
-            <span class="product-price">16,000 ريال</span>
+            <span class="product-price">$16.00</span>
           </div>
 
           <div class="product-rating">
@@ -978,30 +1154,36 @@
           </div>
 
           <button class="btn-add-cart" data-id="128">
-            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="none"
+              stroke="currentColor" stroke-width="2">
               <circle cx="9" cy="21" r="1"></circle>
               <circle cx="20" cy="21" r="1"></circle>
-              <path d="M1 1h4l2.68 13.39a2 2 0 0 0 2 1.61h9.72a2 2 0 0 0 2-1.61L23 6H6"></path>
+              <path d="M1 1h4l2.68 13.39a2 2 0 0 0 2 1.61h9.72a2 2 0 0 0 2 1.61L23 6H6"></path>
             </svg>
             أضف إلى السلة
           </button>
+
         </div>
 
-        <!-- منتج 29 -->
+        <!-- المنتج 29 -->
         <div class="product-card" data-id="129">
+
           <button class="btn-wishlist" aria-label="أضف للمفضلة" title="أضف للمفضلة">
-            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-              <path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"></path>
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none"
+              stroke="currentColor" stroke-width="2">
+              <path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0-7.78 0z"></path>
             </svg>
           </button>
 
-          <a href="product-detail.html" class="product-link">
-            <img src="img/product/JRF4RQR1SupoAhbDgl1z5eW6g9bpZ334Yaf27KzS.jpeg" alt="شاحن hp" class="product-image" loading="lazy">
+          <a href="product-detail.html?id=129" class="product-link">
+            <img src="img/product/JRF4RQR1SupoAhbDgl1z5eW6g9bpZ334Yaf27KzS.jpeg"
+              alt="شاحن hp"
+              class="product-image" loading="lazy">
             <h2 class="product-title">شاحن hp</h2>
           </a>
 
           <div class="product-price-box">
-            <span class="product-price">4,500 ريال</span>
+            <span class="product-price">$5.00</span>
           </div>
 
           <div class="product-rating">
@@ -1010,30 +1192,36 @@
           </div>
 
           <button class="btn-add-cart" data-id="129">
-            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="none"
+              stroke="currentColor" stroke-width="2">
               <circle cx="9" cy="21" r="1"></circle>
               <circle cx="20" cy="21" r="1"></circle>
-              <path d="M1 1h4l2.68 13.39a2 2 0 0 0 2 1.61h9.72a2 2 0 0 0 2-1.61L23 6H6"></path>
+              <path d="M1 1h4l2.68 13.39a2 2 0 0 0 2 1.61h9.72a2 2 0 0 0 2 1.61L23 6H6"></path>
             </svg>
             أضف إلى السلة
           </button>
+
         </div>
 
-        <!-- منتج 30 -->
+        <!-- المنتج 30 -->
         <div class="product-card" data-id="130">
+
           <button class="btn-wishlist" aria-label="أضف للمفضلة" title="أضف للمفضلة">
-            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-              <path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"></path>
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none"
+              stroke="currentColor" stroke-width="2">
+              <path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0-7.78 0z"></path>
             </svg>
           </button>
 
-          <a href="product-detail.html" class="product-link">
-            <img src="img/product/images (10).jpeg" alt="فلاشة هارد 512 GB" class="product-image" loading="lazy">
+          <a href="product-detail.html?id=130" class="product-link">
+            <img src="img/product/images (10).jpeg"
+              alt="فلاشة هارد 512 GB"
+              class="product-image" loading="lazy">
             <h2 class="product-title">فلاشة هارد 512 GB</h2>
           </a>
 
           <div class="product-price-box">
-            <span class="product-price">25,000 ريال</span>
+            <span class="product-price">$25.00</span>
           </div>
 
           <div class="product-rating">
@@ -1042,30 +1230,36 @@
           </div>
 
           <button class="btn-add-cart" data-id="130">
-            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="none"
+              stroke="currentColor" stroke-width="2">
               <circle cx="9" cy="21" r="1"></circle>
               <circle cx="20" cy="21" r="1"></circle>
-              <path d="M1 1h4l2.68 13.39a2 2 0 0 0 2 1.61h9.72a2 2 0 0 0 2-1.61L23 6H6"></path>
+              <path d="M1 1h4l2.68 13.39a2 2 0 0 0 2 1.61h9.72a2 2 0 0 0 2 1.61L23 6H6"></path>
             </svg>
             أضف إلى السلة
           </button>
+
         </div>
 
-        <!-- منتج 31 -->
+        <!-- المنتج 31 -->
         <div class="product-card" data-id="131">
+
           <button class="btn-wishlist" aria-label="أضف للمفضلة" title="أضف للمفضلة">
-            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-              <path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"></path>
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none"
+              stroke="currentColor" stroke-width="2">
+              <path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0-7.78 0z"></path>
             </svg>
           </button>
 
-          <a href="product-detail.html" class="product-link">
-            <img src="img/product/cW5XnQaFmYbWWN8yhS5BIJlbgZGBIMLkbgQ67RyS.png" alt="شاحن لينوفو" class="product-image" loading="lazy">
+          <a href="product-detail.html?id=131" class="product-link">
+            <img src="img/product/cW5XnQaFmYbWWN8yhS5BIJlbgZGBIMLkbgQ67RyS.png"
+              alt="شاحن لينوفو"
+              class="product-image" loading="lazy">
             <h2 class="product-title">شاحن لينوفو</h2>
           </a>
 
           <div class="product-price-box">
-            <span class="product-price">5,000 ريال</span>
+            <span class="product-price">$6.00</span>
           </div>
 
           <div class="product-rating">
@@ -1074,30 +1268,37 @@
           </div>
 
           <button class="btn-add-cart" data-id="131">
-            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="none"
+              stroke="currentColor" stroke-width="2">
               <circle cx="9" cy="21" r="1"></circle>
               <circle cx="20" cy="21" r="1"></circle>
-              <path d="M1 1h4l2.68 13.39a2 2 0 0 0 2 1.61h9.72a2 2 0 0 0 2-1.61L23 6H6"></path>
+              <path d="M1 1h4l2.68 13.39a2 2 0 0 0 2 1.61h9.72a2 2 0 0 0 2 1.61L23 6H6"></path>
             </svg>
             أضف إلى السلة
           </button>
+
         </div>
 
-        <!-- منتج 32 -->
+        <!-- المنتج 32 -->
         <div class="product-card" data-id="132">
+
           <button class="btn-wishlist" aria-label="أضف للمفضلة" title="أضف للمفضلة">
-            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-              <path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"></path>
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none"
+              stroke="currentColor" stroke-width="2">
+              <path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0-7.78 0z"></path>
             </svg>
           </button>
 
-          <a href="product-detail.html" class="product-link">
-            <img src="img/product/526a9793-ed2f-4627-a724-35acc70be695-1000x1000-a4yxsyEmotr0R85fUPsdSR8lHAGDkxUT2yuEZ95G.jpg" alt="مرواح تبريد" class="product-image" loading="lazy">
+          <a href="product-detail.html?id=132" class="product-link">
+            <img
+              src="img/product/526a9793-ed2f-4627-a724-35acc70be695-1000x1000-a4yxsyEmotr0R85fUPsdSR8lHAGDkxUT2yuEZ95G.jpg"
+              alt="مرواح تبريد"
+              class="product-image" loading="lazy">
             <h2 class="product-title">مرواح تبريد</h2>
           </a>
 
           <div class="product-price-box">
-            <span class="product-price">9,000 ريال</span>
+            <span class="product-price">$9.00</span>
           </div>
 
           <div class="product-rating">
@@ -1106,18 +1307,19 @@
           </div>
 
           <button class="btn-add-cart" data-id="132">
-            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="none"
+              stroke="currentColor" stroke-width="2">
               <circle cx="9" cy="21" r="1"></circle>
               <circle cx="20" cy="21" r="1"></circle>
-              <path d="M1 1h4l2.68 13.39a2 2 0 0 0 2 1.61h9.72a2 2 0 0 0 2-1.61L23 6H6"></path>
+              <path d="M1 1h4l2.68 13.39a2 2 0 0 0 2 1.61h9.72a2 2 0 0 0 2 1.61L23 6H6"></path>
             </svg>
             أضف إلى السلة
           </button>
+
         </div>
 
       </section>
     </div>
-
   </main>
 
   <footer>
@@ -1125,5 +1327,5 @@
   </footer>
 
 </body>
-
 </html>
+```
