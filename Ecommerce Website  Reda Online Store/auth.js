@@ -8,13 +8,13 @@ document.addEventListener('DOMContentLoaded', () => {
     if (loginForm) {
         loginForm.addEventListener('submit', handleLogin);
     }
-
+           
     // --- 3. التحقق من نموذج إنشاء حساب ---
     const registerForm = document.getElementById('register-form');
     if (registerForm) {
         registerForm.addEventListener('submit', handleRegister);
     }
-
+          
     // --- 4. التحقق من نموذج استعادة كلمة المرور ---
     const resetForm = document.getElementById('reset-form');
     if (resetForm) {

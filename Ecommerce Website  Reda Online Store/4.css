@@ -1,6 +1,8 @@
-/*
-  1. المتغيرات وإعدادات الصفحة العامة
-    */
+/* 
+  ==========================================
+  1. المتغيرات وإعدادات الصفحة العامة 
+  ==========================================
+*/
 :root {
   --primary-color: #086ee2;
   --primary-hover: #0654ad;
@@ -34,9 +36,13 @@ body {
   margin: 0 auto;
 }
 
-/*  2. كتالوج المنتجات والتصفية (الجزء 2) */
+/* 
+  ==========================================
+  2. كتالوج المنتجات والتصفية
+  ==========================================
+*/
 
-/* شريط المسار والترتيب */
+/* شريط المسار والترتيب والبحث الجديد */
 .catalog-header {
   display: flex;
   justify-content: space-between;
@@ -44,6 +50,28 @@ body {
   margin-bottom: 20px;
   flex-wrap: wrap;
   gap: 12px;
+}
+
+/* [إضافة] تنسيق شريط البحث الجديد */
+.search-wrapper {
+  position: relative;
+  flex: 1;
+  max-width: 400px;
+}
+
+.search-input {
+  width: 100%;
+  padding: 10px 15px;
+  border: 1px solid var(--border-color);
+  border-radius: 25px;
+  outline: none;
+  font-size: 0.9rem;
+  transition: all 0.3s ease;
+}
+
+.search-input:focus {
+  border-color: var(--primary-color);
+  box-shadow: 0 0 0 3px rgba(8, 110, 226, 0.1);
 }
 
 .breadcrumb {
@@ -72,10 +100,6 @@ body {
   cursor: pointer;
 }
 
-.sort-select:focus {
-  border-color: var(--primary-color);
-}
-
 /* تخطيط الكتالوج */
 .catalog-container {
   display: grid;
@@ -93,16 +117,35 @@ body {
   height: fit-content;
 }
 
+/* [إضافة] تنسيق صندوق المفضلات في الشريط الجانبي */
+.wishlist-filter-box {
+  background-color: #fff5f5 !important;
+  border: 1px dashed #feb2b2 !important;
+  margin-bottom: 20px;
+  padding: 12px;
+  border-radius: var(--radius);
+}
+
+.wishlist-toggle {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-weight: 600;
+  color: #c53030;
+}
+
+.badge-count {
+  background-color: var(--danger-color);
+  color: white;
+  padding: 2px 7px;
+  border-radius: 10px;
+  font-size: 0.75rem;
+}
+
 .filter-section {
   margin-bottom: 20px;
   border-bottom: 1px solid #e5e7eb;
   padding-bottom: 16px;
-}
-
-.filter-section:last-child {
-  border-bottom: none;
-  margin-bottom: 0;
-  padding-bottom: 0;
 }
 
 .filter-title {
@@ -118,30 +161,34 @@ body {
   font-size: 0.85rem;
 }
 
-.filter-checkbox,
-.rating-option {
+.filter-checkbox, .rating-option {
   display: flex;
   align-items: center;
   gap: 8px;
   cursor: pointer;
 }
 
-.stars {
-  color: var(--star-color);
-  letter-spacing: 1px;
+/* زر إعادة ضبط الفلاتر الجديد */
+.btn-reset-filters {
+  width: 100%;
+  padding: 10px;
+  background: transparent;
+  border: 1px solid var(--border-color);
+  border-radius: var(--radius);
+  cursor: pointer;
+  margin-top: 10px;
+  transition: 0.3s;
 }
 
-.rating-text {
-  font-size: 0.8rem;
-  color: var(--text-muted);
+.btn-reset-filters:hover {
+  border-color: var(--danger-color);
+  color: var(--danger-color);
 }
 
-/* مدخلات السعر وزر التقييم */
 .price-inputs {
   display: flex;
   align-items: center;
   gap: 8px;
-  font-size: 0.85rem;
 }
 
 .price-inputs input {
@@ -151,11 +198,6 @@ body {
   border: 1px solid var(--border-color);
   border-radius: var(--radius);
   outline: none;
-  font-size: 0.85rem;
-}
-
-.price-inputs input:focus {
-  border-color: var(--primary-color);
 }
 
 .btn-filter-apply {
@@ -167,7 +209,6 @@ body {
   color: var(--primary-color);
   border-radius: var(--radius);
   cursor: pointer;
-  font-size: 0.85rem;
   font-weight: 600;
   transition: all 0.2s ease;
 }
@@ -192,27 +233,12 @@ body {
   padding: 16px;
   display: flex;
   flex-direction: column;
-  align-items: center;
-  text-align: center;
   transition: transform 0.2s ease, box-shadow 0.2s ease;
 }
 
 .product-card:hover {
   transform: translateY(-3px);
   box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
-}
-
-/* وسام الخصم والمفضلة */
-.badge.discount {
-  position: absolute;
-  top: 10px;
-  right: 10px;
-  background-color: var(--danger-color);
-  color: #ffffff;
-  font-size: 0.75rem;
-  font-weight: 700;
-  padding: 2px 6px;
-  border-radius: 4px;
 }
 
 .btn-wishlist {
@@ -223,21 +249,12 @@ body {
   border: none;
   cursor: pointer;
   color: #9ca3af;
-  transition: color 0.2s ease;
 }
 
-.btn-wishlist:hover {
-  color: var(--danger-color);
-}
-
-/* رابط وصورة المنتج */
-.product-link {
-  text-decoration: none;
-  color: inherit;
-  width: 100%;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
+/* [إضافة] تغيير لون القلب عند التفعيل */
+.btn-wishlist.active svg {
+  fill: var(--danger-color);
+  stroke: var(--danger-color);
 }
 
 .product-image {
@@ -251,40 +268,14 @@ body {
   font-size: 0.9rem;
   font-weight: 600;
   margin-bottom: 6px;
-  color: var(--text-color);
-}
-
-/* أسعار وتقييم المنتج */
-.product-price-box {
-  display: flex;
-  align-items: center;
-  gap: 8px;
-  margin-bottom: 6px;
+  text-align: center;
 }
 
 .product-price {
-  font-size: 1rem;
   font-weight: 700;
   color: var(--text-color);
 }
 
-.old-price {
-  font-size: 0.8rem;
-  color: var(--text-muted);
-  text-decoration: line-through;
-}
-
-.product-rating {
-  font-size: 0.8rem;
-  margin-bottom: 12px;
-}
-
-.rating-count {
-  color: var(--text-muted);
-  font-size: 0.75rem;
-}
-
-/* زر إضافات السلة */
 .btn-add-cart {
   width: 100%;
   height: 38px;
@@ -292,50 +283,38 @@ body {
   color: #ffffff;
   border: none;
   border-radius: var(--radius);
-  font-size: 0.85rem;
-  font-weight: 600;
   cursor: pointer;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  gap: 8px;
-  transition: background-color 0.2s ease;
   margin-top: auto;
 }
 
-.btn-add-cart:hover {
-  background-color: var(--primary-hover);
-}
-
-
-   /* 3. تنسيقات نماذج الدحول)*/ */
-.auth-wrapper {
+/* 
+  ==========================================
+  3. تنسيقات نماذج المصادقة (Auth Pages)
+  ==========================================
+*/
+.auth-page-wrapper {
   display: flex;
   justify-content: center;
   align-items: center;
-  min-height: calc(100vh - 40px);
+  min-height: 100vh;
+  padding: 20px;
 }
 
 .auth-card {
   background-color: var(--card-bg);
   border: 1px solid var(--border-color);
   border-radius: var(--radius);
-  box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1);
+  box-shadow: 0 10px 25px rgba(0,0,0,0.05);
   width: 100%;
   max-width: 420px;
-  overflow: hidden;
+  margin: auto;
 }
 
 .auth-header {
   background-color: var(--primary-color);
   color: #ffffff;
-  padding: 16px;
+  padding: 20px;
   text-align: center;
-}
-
-.auth-header h1 {
-  font-size: 1.25rem;
-  font-weight: 600;
 }
 
 .auth-form {
@@ -345,48 +324,13 @@ body {
   gap: 16px;
 }
 
-.form-group {
-  display: flex;
-  flex-direction: column;
-  gap: 6px;
-}
-
-.form-group label {
-  font-size: 0.9rem;
-  font-weight: 500;
-}
-
 .form-input {
   width: 100%;
   height: 40px;
   padding: 8px 12px;
   border: 1px solid var(--border-color);
   border-radius: var(--radius);
-  font-size: 0.95rem;
   outline: none;
-  transition: border-color 0.2s ease;
-}
-
-.form-input:focus {
-  border-color: var(--primary-color);
-  box-shadow: 0 0 0 3px rgba(8, 110, 226, 0.15);
-}
-
-.form-input[type="email"],
-.form-input[type="password"] {
-  direction: ltr;
-  text-align: right;
-}
-
-.forgot-link {
-  align-self: flex-start;
-  font-size: 0.85rem;
-  color: var(--primary-color);
-  text-decoration: none;
-}
-
-.forgot-link:hover {
-  text-decoration: underline;
 }
 
 .btn-submit {
@@ -396,41 +340,66 @@ body {
   color: #ffffff;
   border: none;
   border-radius: var(--radius);
-  font-size: 1rem;
-  font-weight: 600;
   cursor: pointer;
-  transition: background-color 0.2s ease;
-  margin-top: 8px;
-}
-
-.btn-submit:hover {
-  background-color: var(--primary-hover);
 }
 
 .auth-footer {
-  padding: 16px 24px;
-  background-color: #fafafa;
-  border-top: 1px solid var(--border-color);
+  padding: 16px;
   text-align: center;
-  font-size: 0.9rem;
+  border-top: 1px solid var(--border-color);
 }
 
-.auth-footer a {
-  color: var(--primary-color);
-  text-decoration: none;
-  font-weight: 600;
-  margin-right: 4px;
+/* 
+  ==========================================
+  4. نظام التنبيهات الجديد (Toast)
+  ==========================================
+*/
+.toast-container {
+  position: fixed;
+  bottom: 20px;
+  left: 20px;
+  z-index: 9999;
 }
 
-.auth-footer a:hover {
-  text-decoration: underline;
+.toast-message {
+  background: #333;
+  color: #fff;
+  padding: 12px 20px;
+  border-radius: 8px;
+  margin-top: 10px;
+  transform: translateX(-150%);
+  transition: 0.5s ease;
 }
 
+.toast-message.show {
+  transform: translateX(0);
+}
+/* جعل النجوم تبدو مشعة قليلاً عند التحويم */
+.stars {
+  color: var(--star-color);
+  text-shadow: 0 0 2px rgba(255, 193, 7, 0.3);
+  transition: all 0.3s ease;
+}
 
-   /* 4. التجاوب للشاشات الصغيرة */
+.product-card:hover .stars {
+  letter-spacing: 2px; /* حركة بسيطة تعطي حيوية */
+}
 
+/* تنسيق خيار التقييم في السايد بار */
+.rating-option:hover .stars {
+  color: #ff9800; /* تغيير الدرجة عند تمرير الماوس */
+}
+/* 
+  ==========================================
+  5. التجاوب (Responsive)
+  ==========================================
+*/
 @media (max-width: 768px) {
   .catalog-container {
     grid-template-columns: 1fr;
+  }
+  .search-wrapper {
+    max-width: 100%;
+    order: 3;
   }
 }
